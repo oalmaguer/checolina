@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <title>Checolina</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="picture">
+        <img src="/checo.jpeg" width="200px" alt="random picture" />
+      </div>
+      <div class="information">
+        <h1>
+          Hola, mi nombre es
+          <span style="color: pink">Checolina</span>
+        </h1>
+        <p>
+          Si estas leyendo esto por favor devuelveme con mis humanos, gracias.
+        </p>
+        <p>
+          Mi Dirección es:
+          <a
+            target="_blank"
+            class="link"
+            href="https://maps.app.goo.gl/YWQsXD7eKD5HADoVA"
+            >Santa Monica 1013, El Dorado.</a
+          >
+        </p>
+        <p>Mi telefono es: <span style="font-weight: 500">6692687287</span></p>
+      </div>
+      <div class="footer">
+        <a href="https://instagram.com/olialmaguer" class="link" target="_blank"
+          >Mandar mensaje a mi humano</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: #ffe6e6;
+  }
+
+  .container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #ad88c6;
+  }
+  .container img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+
+  .link {
+    font-weight: 500;
+    color: #ad88c6;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .link:hover {
+    color: #9170a7;
+  }
+</style>
