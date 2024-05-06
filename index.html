@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <div class="picture">
-        <img src="./assets/checo.jpeg" width="200px" alt="random picture" />
+        <img class="checoimage" src="./assets/checo.jpeg" width="200px" alt="random picture" />
       </div>
       <div class="information">
         <h1>
@@ -23,24 +23,18 @@
           <span style="color: pink">Checolina</span>
         </h1>
         <p>
-          Si estas leyendo esto por favor devuelveme con mis humanos, gracias.
+          Si estás leyendo esto, por favor devuelveme con mis humanos, gracias<span style='font-size:32px;'>&#128568;</span>
+          
         </p>
-        <p>
-          Mi Dirección es:
-          <a
-            target="_blank"
-            class="link"
-            href="https://maps.app.goo.gl/YWQsXD7eKD5HADoVA"
-            >Santa Monica 1013, El Dorado.</a
-          >
-          Mazatlán, Sinaloa.
-        </p>
-        <p>Mi telefono es: <span style="font-weight: 500">6692687287</span></p>
+        <div class="icons">
+          <a target="_blank" href="https://instagram.com/olialmaguer"><img src="./assets/insta.png" /></a>
+          <a target="_blank" href="https://www.facebook.com/olialmaguer/"><img src="./assets/face.png" /></a>
+          <a target="_blank" href="https://wa.me/6692687287"><img src="./assets/whats.png" /></a>
+        </div>
+
       </div>
       <div class="footer">
-        <a href="https://instagram.com/olialmaguer" class="link" target="_blank"
-          >Mandar mensaje a mi humano</a
-        >
+     
       </div>
     </div>
   </body>
@@ -49,6 +43,16 @@
 <style>
   body {
     background-color: #ffe6e6;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .icons img {
+    height:64px;
   }
 
   .container {
@@ -63,7 +67,7 @@
     font-family: "Montserrat", sans-serif;
     color: #ad88c6;
   }
-  .container img {
+  .checoimage {
     height: 200px;
     object-fit: cover;
     object-position: top;
