@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Checolina</title>
+        <link rel="icon" href="./assets/checo.jpeg" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        
+    </head>
+    
+    <body>
+        <script src="app.js"></script>
+
+        <div class="container">
+            <form id="form">
+                <div class="form-group">
+                    <label for="name">Nombre de tu mascota</label>
+                    <input type="text" id="name" name="name" class="form-control" />
+                </div>
+             
+                <div class="form-group">
+                    <label for="photo">Foto de tu mascota</label>
+                    <input type="file" id="photo" name="photo" class="form-control" onchange="previewImage(event)" />
+
+                    <img id="preview" style="display: none; width: 100px; height: 100px;" />
+
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="facebook">Facebook</label>
+                    <input type="text" id="facebook" name="facebook" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="text" id="whatsapp" name="whatsapp" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de teléfono</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" />
+                </div>
+
+                <button onsubmit="submit(event)">Submit</button>
+        </div>
+
+    </body>
+</html>
