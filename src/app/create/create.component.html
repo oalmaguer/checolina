@@ -1,0 +1,97 @@
+<div class="container">
+  <form [formGroup]="form" class="form">
+    <div class="form-group">
+      <label for="name">Nombre de tu mascota</label>
+      <input
+        formControlName="name"
+        [defaultValue]="previewData.name"
+        type="text"
+        id="name"
+        name="name"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="photo">Foto de tu mascota</label>
+      <input
+        formControlName="photo"
+        type="file"
+        id="photo"
+        name="photo"
+        class="form-control"
+        (change)="previewImage($event)"
+      />
+
+      <img
+        id="preview"
+        class="preview"
+        style="display: none; width: 100px; height: 100px"
+      />
+    </div>
+    <div class="form-group">
+      <label for="instagram">Instagram</label>
+      <input
+        formControlName="instagram"
+        type="text"
+        id="instagram"
+        name="instagram"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="facebook">Facebook</label>
+      <input
+        formControlName="facebook"
+        type="text"
+        id="facebook"
+        name="facebook"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="whatsapp">WhatsApp</label>
+      <input
+        formControlName="whatsapp"
+        type="text"
+        id="whatsapp"
+        name="whatsapp"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="phone">Número de teléfono</label>
+      <input
+        formControlName="phone"
+        type="tel"
+        id="phone"
+        name="phone"
+        class="form-control"
+      />
+    </div>
+
+    <div class="btn-group">
+      <button type="button" (click)="goBack()" class="btn btn-warning">
+        Atras
+      </button>
+      <button
+        [ngClass]="{ disabled: !form.valid }"
+        [disabled]="!form.valid"
+        type="button"
+        (click)="submit()"
+        class="btn btn-primary"
+      >
+        Pagar
+      </button>
+      <button
+        [ngClass]="{ disabled: !form.valid }"
+        [disabled]="!form.valid"
+        type="button"
+        (click)="preview()"
+        class="btn btn-secondary"
+      >
+        Preview
+      </button>
+    </div>
+  </form>
+</div>
